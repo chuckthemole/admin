@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+src/main/java/com/rumpus/admin/log/*
+src/test/java/com/rumpus/admin/log/*
