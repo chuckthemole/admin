@@ -14,12 +14,7 @@ import com.rumpus.common.Config.AbstractCommonConfig;
 @PropertySource("classpath:database.properties")
 @EnableWebSecurity
 public class AdminConfig extends AbstractCommonConfig {
-    // @Bean
-    // protected SecurityFilterChain filterChain(HttpSecurity http) {
-    //     return http.authorizeHttpRequests((authorizeRequests) -> authorizeRequests.anyRequest().permitAll())
-    //         .csrf().disable().build();
-    // }
-
+    
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
         return (web) -> web.ignoring()
