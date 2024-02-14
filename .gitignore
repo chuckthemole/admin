@@ -36,5 +36,11 @@ out/
 ### VS Code ###
 .vscode/
 
+### Added by Chuck ###
+application.properties
+database.properties
+tmp/
+target/
+
 src/main/java/com/rumpus/admin/log/*
 src/test/java/com/rumpus/admin/log/*
