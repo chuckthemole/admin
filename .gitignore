@@ -37,6 +37,7 @@ out/
 .vscode/
 
 ### Added by Chuck ###
+properties.yml
 application.properties
 database.properties
 tmp/
