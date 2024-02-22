@@ -43,5 +43,5 @@ database.properties
 tmp/
 target/
 
-src/main/java/com/rumpus/admin/log/*
-src/test/java/com/rumpus/admin/log/*
+src/main/java/com/rumpus/admin/log/
+src/test/java/com/rumpus/admin/log/
