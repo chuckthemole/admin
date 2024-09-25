@@ -9,5 +9,10 @@ public class AdminPortCustomizer extends com.rumpus.common.Config.AbstractServer
     public AdminPortCustomizer(org.springframework.core.env.Environment environment, com.rumpus.common.Server.Port.IPort port) {
         super(NAME, environment, port);
     }
+
+    @Override
+    public String sqlDialect() {
+        return "MYSQL";
+    }
 }
 

@@ -6,7 +6,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.security.web.SecurityFilterChain;
 
@@ -36,5 +35,10 @@ public class AdminConfig extends AbstractCommonConfig {
         return http.cors().and().csrf().disable().authorizeHttpRequests(
             (authorizeRequests) -> authorizeRequests.anyRequest().permitAll()
         ).build();
+    }
+
+    @Override
+    public String sqlDialect() {
+        return "MYSQL";
     }
 }
