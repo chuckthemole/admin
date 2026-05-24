@@ -6,7 +6,7 @@ import sys
 # TODO build this out to download external dependencies (buildSrc/common)
 
 # Commands
-build = "./gradlew clean build --refresh-dependencies -x test > src/main/java/com/rumpus/admin/log/build.log"
+build = "./gradlew clean build --refresh-dependencies -x test &> src/main/java/com/rumpus/admin/log/build.log"
 buildXlint = "./gradlew clean build --refresh-dependencies -x test -Xlint:unchecked > src/main/java/com/rumpus/admin/log/build.log"
 buildDebug = "./gradlew clean build --refresh-dependencies --debug -x test > src/main/java/com/rumpus/admin/log/build.log"
 buildTest = "./gradlew clean build --refresh-dependencies > src/main/java/com/rumpus/admin/log/build.log"
